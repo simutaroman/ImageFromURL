@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Image" asp-action="Index">
+    <input id="externalUrl" name="externalUrl" type="url" style="width:100%" />
+    <div class="buttons">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<div>
+    <p>Image which is uploaded from URL.</p>
+    <p>If you do not see it, may be you are running the app for first time.</p>
+    <p>If you see the same image after uploading attempt, try to hit F5 or Ctrl+F5 to refresh the browser page.</p>
+    <p>If you still do not see the image, probably you have caught the bug :)</p>
+    <img src="~/uploads/image.jpg" />
+</div>
+
+
